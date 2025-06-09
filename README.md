@@ -116,6 +116,29 @@ This task helps us understand how changes in **stride** and **padding** affect t
   - Average-pooled matrix  
 
 This task shows how pooling helps reduce spatial dimensions while retaining the essential features of the input.
+
+----
+### Output:
+
+- **Original 4x4 Matrix:'**
+    ```plaintext
+     [[4. 0. 5. 0.]
+     [7. 7. 9. 0.]
+     [6. 7. 2. 4.]
+     [9. 4. 2. 9.]]
+    ```
+
+- **Max Pooled 2x2:**
+    ```plaintext
+     [[7. 9.]
+     [9. 9.]]
+    ```
+
+- **Average Pooled 2x2:**
+    ```plaintext
+    [[4.5  3.5 ]
+     [6.5  4.25]]
+----
 ### Summary
 
 This part of the assignment demonstrates how **filters and pooling** work in convolutional neural networks:
@@ -156,7 +179,12 @@ This task focuses on preparing data for machine learning models through preproce
   To analyze the effect of preprocessing on model performance and understand when to use **normalization** versus **standardization**.
 
 ---
+### OutPut:
 
+- Original data accuracy: 1.00
+- MinMax normalized accuracy: 0.97
+- Standardized accuracy: 1.00
+---
 ### Summary
 
 - **Normalization** scales features to a fixed range (typically [0, 1]) and is useful when input values vary widely or when using models sensitive to feature scales (e.g., neural networks, image data).
