@@ -200,10 +200,12 @@ Before running the scripts, make sure you have all required libraries installed:
 pip install -r requirements.txt
 ```
 ### Run Scripts
+```
 python Convolution_Operations.py
 python Edge_Detection.py
 python Max_Average_Pooling.py
 python DataPreprocessing.py
+```
 
 
 
